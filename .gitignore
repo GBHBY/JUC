@@ -1,0 +1,6 @@
+# Project exclude paths
+/target/
+.idea
+/test
+project.iml
+JUC.iml
