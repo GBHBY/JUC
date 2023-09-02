@@ -1,6 +1,4 @@
-package com.gyb.test;
-
-import java.util.concurrent.TimeUnit;
+package com.gyb.join;
 
 /**
  * @author gb
@@ -24,14 +22,14 @@ public class Test1 {
 
 
         Thread thread = new Thread(() -> {
-            synchronized (lock){
+            synchronized (lock) {
                 for (int i = 0; i < 26; i++) {
-                    if(i<=8){
+                    if (i <= 8) {
                         System.out.print(num[i]);
-                    }else if(i<=17){
-                        System.out.print(num[i-9]);
-                    }else {
-                        System.out.print(num[i-18]);
+                    } else if (i <= 17) {
+                        System.out.print(num[i - 9]);
+                    } else {
+                        System.out.print(num[i - 18]);
                     }
                     try {
                         System.out.println("++");
@@ -49,7 +47,7 @@ public class Test1 {
         });
 
         Thread thread2 = new Thread(() -> {
-            synchronized (lock){
+            synchronized (lock) {
                 for (int i = 0; i < str.length; i++) {
                     System.out.println(str[i]);
                     System.out.println("--");

@@ -1,4 +1,4 @@
-package com.gyb.test;
+package com.gyb.join;
 
 /**
  * Description:
