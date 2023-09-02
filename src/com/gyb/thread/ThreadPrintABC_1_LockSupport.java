@@ -3,7 +3,7 @@ package com.gyb.thread;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * Description:
+ * Description: 通过lockSupport实现顺序打印
  *
  * @author GB
  * @date 2023/7/20 16:31
