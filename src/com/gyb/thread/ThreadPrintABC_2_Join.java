@@ -3,9 +3,12 @@ package com.gyb.thread;
 /**
  * Description:
  *
+ *
+ *
  * @author GB
  * @date 2023/7/20 16:31
  */
+
 public class ThreadPrintABC_2_Join {
     public static void main(String[] args) throws InterruptedException {
         Thread one = new Thread(() -> {
@@ -19,7 +22,8 @@ public class ThreadPrintABC_2_Join {
         Thread three = new Thread(() -> {
             System.out.println("C");
         });
-
+        //为什么用join就能够实现顺序打印呢？
+        //因为在one调用join后，主线程会等待one执行完毕后再往后执行。
         one.start();
         one.join();
 
@@ -42,7 +46,4 @@ public class ThreadPrintABC_2_Join {
     }
 
 
-    public synchronized void test(){
-
-    }
 }
