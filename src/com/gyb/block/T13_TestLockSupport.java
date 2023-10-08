@@ -32,7 +32,7 @@ public class T13_TestLockSupport {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("after 7 senconds!");
+        System.out.println("after 6 senconds!");
 
         LockSupport.unpark(t);
 
